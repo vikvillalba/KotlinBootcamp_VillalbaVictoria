@@ -1,5 +1,16 @@
 
 fun main(args : Array<String>) {
+  spicesOOP()
+}
+
+fun spicesOOP(){
+    val spice = SimpleSpice()
+
+    println("name:${spice.name}, " + "heat:${spice.getHeat()}")
+}
+
+
+fun spices1() {
     val spices = listOf("curry", "pepper", "cayenne", "ginger", "red curry", "green curry", "red pepper" )
     val curriesSorted = spices.filter { it.contains("curry") }.sortedBy { it.length }
     println("Curries sorted by size: $curriesSorted")
