@@ -15,3 +15,14 @@ class Aquarium (var lenght: Int = 100, var width: Int = 20, var height: Int = 40
     }
 
 }
+
+fun main(){
+    val symptoms : MutableList<String> = mutableListOf("white spots", "red spots", "not eating", "bloated", "belly up")
+    symptoms.add("white fungus")
+    symptoms.remove("white fungus")
+
+    println(symptoms.subList(4, symptoms.size))
+
+    val cures : Map<String, String> = mapOf("White spots" to "Ich" , "red sores" to "hole disease")
+
+}
